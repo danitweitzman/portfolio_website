@@ -1,0 +1,274 @@
+@font-face {
+    font-family: "GT Flexa Mono Trial VF";
+    src: url("./fonts/GT-Flexa-Mono-Trial-VF.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Romie";
+    src: url("./fonts/Romie-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "GT Haptik Trial";
+    src: url("./fonts/GT-Haptik-Bold-Trial.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GT Haptik Trial";
+    src: url("./fonts/GT-Haptik-Bold-Rotalic-Trial.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "GT Flexa Mono Trial VF", monospace;
+    background: #F2F0ED;
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDEwQzEwIDE1LjUyNyAxNS41MjcgMjAgMTAgMjBDNC40NzI5IDIwIDAgMTUuNTI3IDAgMTBDMCA0LjQ3MjkgNC40NzI5IDAgMTAgMEMxNS41MjcgMCAyMCA0LjQ3MjkgMjAgMTBDMjAgMTUuNTI3IDE1LjUyNyAyMCAxMCAyMFoiIGZpbGw9IiMwMEZGMDAiLz4KPC9zdmc+Cg==') 10 10, auto;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #F2F0ED;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+/* Default styling */
+.navbar h1 {
+    font-family: 'GT Haptik Trial', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Style each letter individually */
+.navbar h1 span {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Rotation effect on hover */
+.navbar h1:hover span {
+    transform: rotate(-15deg);
+}
+
+/* Adding staggered animation for a playful effect */
+.navbar h1:hover span:nth-child(odd) {
+    transform: rotate(15deg);
+}
+
+.navbar h1:hover span:nth-child(even) {
+    transform: rotate(-15deg);
+}
+
+
+
+.container {
+    display: flex;
+    margin-top: 0;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background: #F2F0ED;
+    overflow-y: auto;
+    padding: 7px 40px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.project-title {
+    font-family: "Romie", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 0px 0;
+}
+
+.project-vertical {
+    font-family: "GT Flexa Mono Trial VF", monospace;
+    font-size: 10px;
+    display: block;
+    margin: 10px 0 10px 0;
+    padding: 5px;
+    background: #FFFFFF;
+}
+
+.project-description {
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+.project-link {
+    font-family: "GT Flexa Mono Trial VF", monospace;
+    font-size: 10px;
+    display: inline-block; 
+    margin: 0px 0 10px 0;
+    padding: 5px 10px; 
+    background: #FFFFFF;
+    color: black;
+    text-decoration: none;
+}
+
+.project-item .project-title{
+    color: black; 
+}
+
+.project-item:hover .project-title{
+    color: grey;
+}
+.project-item.active .project-title{
+    color:rgb(178, 144, 167);
+  }
+
+
+.project-item .project-vertical{
+    display: none; 
+}
+
+.project-item:hover .project-vertical,
+.project-item.active .project-vertical{
+    display: inline-block; 
+  }
+
+.project-item .project-description{
+    display: none; 
+}
+
+.project-item.active .project-description {
+    display: inline-block; 
+  }
+
+.main-content {
+    width: 80%;
+    overflow-y: auto;
+    position: relative;
+    z-index: 1;
+    background: #F2F0ED;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.main-content h2 {
+    font-family: "Romie", sans-serif;
+    font-size: 36px;
+    margin: 0;
+}
+
+.case-study {
+    max-width: 1200px;
+    margin: 0;
+    padding-bottom: 200px; 
+}
+
+.project-tool {
+    font-family: "GT Flexa Mono Trial VF", monospace;
+    font-size: 10px;
+    display: inline-block;
+    margin: 2px;
+    padding: 5px;
+    background: #FFFFFF;
+}
+
+.button-link {
+    font-family: "GT Flexa Mono Trial VF", monospace;
+    font-size: 10px;
+    display: inline-block;
+    margin: 2px;
+    padding: 5px;
+    background: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
+}
+
+.first-image {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.full-width-image {
+    width: 100%;
+    margin-top: 2.5px;
+    margin-bottom: 0px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.third-width-image {
+    width: 66%;
+    height: auto;
+    margin-top: 2.5px;
+    margin-left: 2.5px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.single-width-image {
+    width: 33.4%;
+    margin-top: 2.5px;
+    margin-bottom: 0px;
+    margin-right: 2.5px;
+    display: block;
+}
+
+.cropped-gif {
+    width: 100%;  /* Adjust width as needed */
+    height: 700px; /* Set fixed height */
+    object-fit: cover;  /* Ensures the image fills the area */
+    object-position: center 65%; /* Adjusts cropping position */
+}
+
+
+.case-study-video {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.case-study-description {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.case-study-three-imgs {
+    display: flex;
+    gap: 10px; 
+    margin-bottom: 40px;
+}
+
+.img-column {
+    flex: 1;
+}
+
+.case-study-three-videos {
+    display: flex;
+    gap: 10px; 
+    margin-bottom: 40px;
+}
+
+.video-column {
+    flex: 1;
+}
+
+.hidden {
+    display: none;
+}
