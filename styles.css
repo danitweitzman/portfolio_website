@@ -9,8 +9,23 @@
 }
 
 @font-face {
-    font-family: "GT Haptik Trial";
-    src: url("./fonts/GT-Haptik-Light-Trial.otf") format("opentype");
+    font-family: "GT Haptik Bold";
+    src: url("./fonts/GT-Haptik-Bold.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: "GT Haptik Regular";
+    src: url("./fonts/GT-Haptik-Regular.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: "GT Haptik Regular Rotalic";
+    src: url("./fonts/GT-Haptik-Regular-Rotalic.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: "GT Haptik Thin";
+    src: url("./fonts/GT-Haptik-Thin.woff2") format("opentype");
 }
 
 
@@ -39,7 +54,7 @@ body {
 }
 
 .navbar h1 {
-    font-family: 'GT Haptik Trial', sans-serif;
+    font-family: 'GT Haptik Bold', Times;
     font-weight: bold;
     font-style: normal;
     font-size: 20px;
@@ -63,6 +78,14 @@ body {
 
 .navbar h1:hover span:nth-child(even) {
     transform: rotate(-15deg);
+}
+
+.footer {
+    text-decoration: none;
+}
+
+.footer h1{
+    color:#000000;
 }
 
 .container {
@@ -160,8 +183,8 @@ body {
 }
 
 .main-content h2 {
-    font-family: "Romie", sans-serif;
-    /*font-family: "GT Haptik Trial", sans-serif;*/
+    /*font-family: "Romie", sans-serif;*/
+    font-family: 'GT Haptik Regular', Times;
     font-size: 50px; 
     margin: 0px; 
     margin-bottom: 5px; 
@@ -258,9 +281,8 @@ body {
 }
 
 .text_link {
-    color: #9d0d6f;
+    color: #000000;
     text-decoration: underline; 
-    font-weight: bold;
   }
   
 .text_link:hover {
