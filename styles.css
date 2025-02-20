@@ -28,7 +28,6 @@
     src: url("./fonts/GT-Haptik-Thin.woff2") format("opentype");
 }
 
-
 body {
     margin: 0;
     padding: 0;
@@ -106,7 +105,7 @@ body {
     font-family: "Romie", sans-serif;
     font-size: 20px;
     font-weight: bold;
-    margin: 0px 0 0px 0;
+    margin: 0px;
 }
 
 .project-vertical {
@@ -115,7 +114,7 @@ body {
     display: block;
     margin: 10px 0 10px 0;
     padding: 5px;
-    background: #FFFFFF;
+    background: #ffffff;
 }
 
 .intro {
@@ -138,7 +137,7 @@ body {
     font-size: 10px;
     margin: 0px 0 10px 0;
     padding: 5px 10px; 
-    background: #ccff89;
+    background: #ffffff;
     color: black;
 }
 
@@ -183,13 +182,21 @@ body {
 }
 
 .main-content h2 {
-    /*font-family: "Romie", sans-serif;*/
-    font-family: 'GT Haptik Regular', Times;
-    font-size: 50px; 
-    margin: 0px; 
-    margin-bottom: 5px; 
+    /*font-family: "Romie", sans-serif;
+    font-family: 'GT Haptik Regular', Times;*/
+    font-family: 'inter', serif;
+    /*font-weight: bold;*/
+    font-weight: 400;
+    font-style: normal;
+    font-size: 46px;
+    margin-top: 10px; 
+    margin-bottom: 0px; 
     padding-bottom: 0; 
     clear: both; 
+}
+
+.case-study-description h3 {
+    text-decoration: none;
 }
 
 .case-study { 
@@ -221,8 +228,9 @@ body {
 .first-image {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 5px;
+    
 }
+
 .full-width-image {
     width: 100%;
     margin-top: 2.5px;
@@ -231,69 +239,77 @@ body {
 
 .image-container {
     display: flex;
-    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 15px; /* Creates a 10px gap between images */
+    align-items: stretch; /* Ensures images are the same height */
 }
 
-.third-width-image {
-    width: 66%;
-    height: auto;
-    margin-top: 2.5px;
-    margin-left: 2.5px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    display: block;
+.single-width-image, .third-width-image {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .single-width-image {
-    width: 33.4%;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    margin-right: 2.5px;
-    display: block;
+    flex: 1; /* Takes 1/3rd of the container */
+}
+
+.third-width-image {
+    flex: 2; /* Takes 2/3rd of the container */
+}
+
+.single-width-image img, .third-width-image img {
+    width: 100%; /* Ensures the images take up the full width */
+    height: 100%; /* Makes images fill the container */
+    object-fit: cover; /* Ensures images maintain aspect ratio and cover the container */
 }
 
 .cropped-gif {
     width: 100%;  
-    height: 700px; 
+    height: 680px; 
     object-fit: cover;  
-    object-position: center 65%; 
+    object-position: center 70%; 
 }
 
 .case-study-video {
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-top:0px;
 }
 
 .case-study-intro {
     display: flex;
     flex-wrap: wrap;
-    /*font-size: 14px;*/
+    font-family: "Inter", serif;
+    font-weight: 300;
 }
 
 .case-study-description {
-    width: 72%;
-    margin-bottom: 5px;
-    margin-top: 0;
+    width: 65%;
+    font-family: "Inter", serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: 10px;
     padding-top: 0;
     line-height: 1.5;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-.text_link {
+.styled-link {
     color: #000000;
-    text-decoration: underline; 
+    text-decoration: underline;
   }
   
-.text_link:hover {
+.styled-link:hover {
     text-decoration: underline;
     color: #cb80b3; 
   }
 
 .case-study-three-imgs {
     display: flex;
-    gap: 10px; 
-    margin-bottom: 40px;
+    gap: 15px; 
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 .img-column {
@@ -309,6 +325,66 @@ body {
 .video-column {
     flex: 1;
 }
+
+/* Make each container 100% wide and 400px tall */
+.gallery-container {
+    width: 100%;
+    height: 400px;
+    display: flex;          /* let child .gallery-item line up side by side */
+    overflow: hidden;   
+    margin-top: 20px;     /* if images go beyond 400px in height, hide it */
+    margin-bottom: 10px;    /* some spacing between rows, optional */
+  }
+
+
+  .gallery-container.one-image .gallery-item {
+    flex: 0 0 100%; 
+    position: relative;
+    margin: 0px;
+  }
+
+  .gallery-container.one-video .gallery-item {
+    flex: 0 0 100%; 
+    position: relative;
+    margin: 0px;
+  }
+  
+  /* For 2 images side by side (50% + 50%) */
+  .gallery-container.two-images .gallery-item {
+    flex: 0 0 50%; 
+    position: relative;
+    margin: 0px;
+  }
+  
+  /* For 3 images side by side (33% each) */
+  .gallery-container.three-images .gallery-item {
+    flex: 0 0 33.333%;
+    position: relative;
+    margin: 0px;
+  }
+  /* Example: 2 images but not evenly split */
+  .gallery-container.two-images-uneven .gallery-item.wide {
+    flex: 0 0 62%;  /* 70% width for first image */
+    margin: 0px;
+  }
+  .gallery-container.two-images-uneven .gallery-item.narrow {
+    flex: 0 0 38%;  /* 30% width for second image */
+    margin: 0px;
+  }
+
+  .gallery-container.two-images-uneven .gallery-item {
+    position: relative;
+    margin: 0px;
+  }
+  
+  .gallery-container .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    display: block;
+    margin: 0px;
+  }
+  
 
 .hidden {
     display: none;

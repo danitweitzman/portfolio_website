@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danit Weitzman</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+      </style>
 </head>
 <body>
   <header class="navbar">
     <div class="project-item" data-section="home">
       <h1 id="name-toggle">DANIT&nbsp;WEITZMAN</h1>
     </div>
-    <div class="project-item" data-section="home">
-      <h1 id="name-toggle">HI</h1>
-    </div>
   </header>
 
     <div class="container">
         <aside class="sidebar">
-            <!-- <div class="project-item" data-section="collectiveEmotions">
+           
+          <!--<div class="project-item" data-section="collectiveEmotions">
                 <p class="project-title">Collective Emotions</p>
-                <p class="project-vertical">AI</p>
+                <p class="project-vertical">FRONTEND CODE</p>
+                <p class="project-vertical">BACKEND CODE</p>
                 <p class="project-vertical">DATA VIZ</p>
-                <p class="project-vertical">CODE</p>
+                <p class="project-vertical">AI</p>
             </div> -->
 
             <div class="project-item" data-section="cafeGranja">
@@ -33,18 +35,18 @@
             </div>
 
             <div class="project-item" data-section="atlantic">
-                <p class="project-title">Interactive Illustration</p>
+                <p class="project-title">Speculative Interactive Editorial</p>
                 <p class="project-vertical">FRONTEND CODE</p>
                 <p class="project-vertical">GRAPHIC DESIGN</p>
             </div>
 
             <div class="project-item" data-section="pepsico">
-                <p class="project-title">Pepsico Lab Chats Animations</p>
+                <p class="project-title">Logo Animations for PepsiCo</p>
                 <p class="project-vertical">MOTION GRAPHICS</p>
             </div>
 
             <div class="project-item" data-section="halloween">
-                <p class="project-title">Halloween 1978 Title Sequence</p>
+                <p class="project-title">Halloween (1978) Title Sequence</p>
                 <p class="project-vertical">MOTION GRAPHICS</p>
             </div>
 
@@ -65,86 +67,226 @@
                 <p class="project-vertical">PROJECTION MAPPING</p>
                 <p class="project-vertical">MOTION GRAPHICS</p>
             </div>
-
-            <!--<div class="project-item" data-section="experiments">
-                <p class="project-title">AI & Code Experiments</p>
-                <p class="project-vertical">TERMINAL APPS</p>
-                <p class="project-vertical">LLM FINE TUNING</p>
-                <p class="project-vertical">P5.JS GAMES</p>
-            </div>
-
-            <div class="project-item" data-section="paintings">
-                <p class="project-title">Paintings & Drawings</p>
-                <p class="project-vertical">VARIOUS</p>
-            </div>-->
         </aside>
 
 
         <main class="main-content">
-            
-          <section id="home" class="case-study">
-            <!--<div class="case-study-video">
-              <video controls width="100%">
-                <source src="video1.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-            </div>-->
-          </section>
 
-          <section id="contact" class="case-study hidden">
-            <div class="case-study-description"> 
-              AN INTERACTIVE ILLUSTRATION FOR AN ARTICLE BY THE ATLANTIC ABOUT EXTREME FISHING. THE DESIGN MIRRORS THE ARTICLE'S TONE OF UNEASE, WITH READERS NAVIGATING THE TEXT USING A BEAM OF LIGHT. AS THEY SCROLL DEEPER, THE ENVIRONMENT DARKENS, HEIGHTENING THE SENSE OF FEAR AND DANGER.
+        <section id="home" class="case-study">
+
+        <div class="home-emotions">
+          <div class="gallery-container two-images">
+            <div class="gallery-item">
+              <img src="assets/emotions/installation.png" alt="installation" />
             </div>
-          </section>
+            <div class="gallery-item">
+              <img src="assets/emotions/brochure.png" alt="brochure" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="home-cafe">
+          <div class="gallery-container two-images-uneven" data-section="cafeGranja">
+            <div class="gallery-item narrow">
+              <img src="assets/cafe/1.png" alt="Package 1"/>
+            </div>
+            <div class="gallery-item wide">
+                <div class="gallery-item">
+                    <video autoplay loop muted playsinline width="100%">
+                        <source src="assets/cafe/loop.mov" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+          </div>  
+        </div>
+
+        <div class="home-atlantic">
+          <div class="gallery-container two-images">
+            <div class="gallery-item">
+              <img src="assets/atlantic/atlantic-computer.png" alt="Atlantic Computer"/>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/atlantic/words.png" alt="Atlantic Print"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-pepsico">
+          <div class="gallery-container one-image">
+            <div class="gallery-item">
+              <img src="assets/pepsico/logo2_web.gif" alt="logo 2"/>
+            </div>
+        </div>
+
+        <div class="home-halloween">
+          <div class="gallery-container one-video">
+              <div class="gallery-item">
+                  <video autoplay loop muted playsinline width="100%">
+                      <source src="assets/halloween/mini.mov" type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+          </div>
+      </div>
+
+      <div class="home-zine">
+        <div class="gallery-container two-images">
+          <div class="gallery-item">
+            <img src="assets/zine/mag.png" alt="magazine"/>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/zine/p4.png" alt="page 4"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-ombligo">
+        <div class="gallery-container two-images-uneven">
+          <div class="gallery-item narrow">
+            <img src="assets/ombligo/single.png" alt="Package"/>
+          </div>
+          <div class="gallery-item wide">
+              <div class="gallery-item">
+                <img src="assets/ombligo/uxui.png" alt="app"/>
+              </div>
+        </div>  
+      </div>
+
+      <div class="home-meditation">
+        <div class="gallery-container one-image">
+          <div class="gallery-item">
+            <img src="assets/meditation/storyboard.png" alt="storyboard"/>
+          </div>
+      </div>
+
+  
+      </section>
       
-            <!-- CAFE GRANJA CASE STUDY -->
+            <!--------------------------------
+                  CAFE GRANJA CASE STUDY 
+            --------------------------------->
             <section id="cafeGranja" class="case-study hidden">
-              <h2>Data Driven Coffee Packaging</h2>
+
+              <h2>Data-Driven Coffee Packaging</h2>
+
               <div class="case-study-intro">
                 <div class="case-study-description">
-                  <a href="https://cafegranjalaesperanza.com/" 
-                   target="_blank" class="text_link">CAFE GRANJA LA ESPERANZA</a> 
-                  IS A HIGH-ALTITUDE COFFEE FARM IN COLOMBIA, KNOWN FOR ITS DISTINCT FLAVOR PROFILES. THIS PACKAGING TRANSLATES KEY DATA (ALTITUDE, HUMIDITY, TEMPERATURE AND MORE) INTO DESIGN ELEMENTS THAT REFLECT THE COFFEE’S SENSORY EXPERIENCE. THE RESULT IS A PACKAGING SYSTEM THAT TELLS THE STORY OF THE COFFEE’S ORIGIN AND MAKES ITS TASTE INSTANTLY RECOGNIZABLE. 
+                  Traditional coffee packaging often relies on text—processing methods, tasting notes, and altitude—to describe flavor. But for visual thinkers, these descriptions can feel abstract. What does “light-bodied with fruity notes” actually look like?                </div>
+                <div class="case-study-description">
+                  I set out to bridge that gap by creating a data-driven visual system that transforms coffee’s complexity into something instantly understandable. Using real data from <a href="https://cafegranjalaesperanza.com/" target="_blank" class="styled-link">Café Granja La Esperanza</a>'s coffee beans—including variety, processing method, altitude, humidity, and temperature—I developed a generative tool that converts these factors into a unique visual identity.
                 </div>
+              </div>
+
               <div class="first-image">
-                <img src="assets/cafe/output.gif" alt="Packages" class="cropped-gif"/>
-            </div>
-            <div class="case-study-video">
-              <video controls loop width="100%">
-              <source src="assets/cafe/generator.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="case-study-three-imgs">
+                <img src="assets/cafe/output.gif" alt="Packaging" class="cropped-gif"/>
+              </div>
+
+              <div class="case-study-intro">
+                <div class="case-study-description">
+                  The generative tool is an interactive visualizer that allows users to see in real time how each variable shapes a coffee’s profile. Users can adjust the sliders to see how different combinations of variety, process, altitude, humidity, and temperature affect the final design.
+                </div>
+                 <div class="case-study-description">
+                (Try the generator <a href="https://danitweitzman.github.io/Coffee-Packaging-Generator/" target="_blank" class="styled-link">here</a>)
+               </div>
+              </div>
+
+              <div class="first-image">
+                <video autoplay loop muted playsinline width="100%">
+                  <source src="assets/cafe/generator.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div class="case-study-intro">
+                <div class="case-study-description">
+                  Each design element directly maps to a sensory attribute:
+                  <ul>
+                    <li><strong>Variety</strong> defines the base flavor, represented by the first color.</li>
+                    <li><strong>Process</strong> alters taste, shown through a second color blending into the first.</li>
+                    <li><strong>Altitude</strong>  influences complexity—higher altitudes generate more layered compositions.</li>
+                    <li><strong>Temperature</strong> affects acidity and texture—spikes represent bright, high-acid coffees, while smooth curves indicate a silkier feel. </li>
+                    <li><strong>Humidity</strong> determines body—wider peaks for a fuller, denser coffee, thinner for a lighter one.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="case-study-three-imgs">
                 <div class="img-column">
-                    <img src="assets/cafe/1.png" alt="Atlantic Computer mockup" width="100%"/>
-                  </img>
+                  <video autoplay loop muted playsinline width="100%">
+                    <source src="assets/cafe/altitude_detail.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                    </video>
                 </div>
                 <div class="img-column">
-                    <img src="assets/cafe/2.png" alt="Atlantic Computer mockup" width="100%"/>
-                  </img>
+                  <video autoplay loop muted playsinline width="100%">
+                    <source src="assets/cafe/temperature_detail.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                    </video>
                 </div>
                 <div class="img-column">
-                    <img src="assets/cafe/3.png" alt="Atlantic Computer mockup" width="100%"/>
-                  </img>
+                  <video autoplay loop muted playsinline width="100%">
+                    <source src="assets/cafe/humidity_detail.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                    </video>
                 </div> 
               </div>
-          </section>
+
+          <div class="case-study-intro">
+            <div class="case-study-description">
+              The system invites users to experience flavor visually. It converts natural attributes into sensory and visual elements, showing how algorithmic, data-driven design can simplify complex information for both branding and user interaction.
+             </div>
+          </div>
+
+          <div class="case-study-three-imgs">
+            <div class="img-column">
+                <img src="assets/cafe/1.png" alt="Atlantic Computer mockup" width="100%"/>
+              </img>
+            </div>
+            <div class="img-column">
+                <img src="assets/cafe/2.png" alt="Atlantic Computer mockup" width="100%"/>
+              </img>
+            </div>
+            <div class="img-column">
+                <img src="assets/cafe/3.png" alt="Atlantic Computer mockup" width="100%"/>
+              </img>
+            </div> 
+          </div>
+
+          <div class="case-study-intro">
+            <div class="case-study-description">
+              Built entirely from scratch, this project combines:        
+              <ul> 
+                <li><strong>Frontend development</strong> to generate real-time visual representations of coffee data.</li> 
+                <li><strong>UX/UI interactivity</strong> to make flavor profiles explorable and intuitive.</li> 
+                <li><strong>Data visualization</strong> to turn sensory complexity into a structured, brandable system.</li> 
+              </ul>
+              Tools Used: CSS, HTML, JavaScript, Figma, Adobe Illustrator, Adobe Photoshop
+            </div>
+
+
+        </section>
+
            
-          <!-- ATLANTIC CASE STUDY -->
+          <!--------------------------------
+                   ATLANTIC CASE STUDY 
+            -------------------------------->
           <section id="atlantic" class="case-study hidden">
-            <h2>Interactive Illustration: The Atlantic</h2>
-            <div class="intro">
-              <div class="case-study-description"> 
-                AN INTERACTIVE ILLUSTRATION FOR AN ARTICLE BY THE ATLANTIC ABOUT EXTREME FISHING. THE DESIGN MIRRORS THE ARTICLE'S TONE OF UNEASE, WITH READERS NAVIGATING THE TEXT USING A BEAM OF LIGHT. AS THEY SCROLL DEEPER, THE ENVIRONMENT DARKENS, HEIGHTENING THE SENSE OF FEAR AND DANGER.
+
+            <h2>Visualizing Fear: A Speculative Editorial for The Atlantic</h2>
+
+            <div class="case-study-intro">
+              <div class="case-study-description">
+                Inspired by Inspired by The Atlantic’s article “Inside the Dangerous, Secretive World of Extreme Fishing” by Tyler Austin Harper, I designed a interactive editorial that heightens the story’s tension. Instead of passively reading, users navigate the text using a beam of light, mimicking the experience of searching in darkness. As they scroll deeper, the environment darkens, intensifying the unease and danger described in the article.                  
               </div>
-              <div class="project-link">
-                <a href="https://danitweitzman.github.io/The-Atlantic-Illustration/" target="_blank">LIVE SITE</a>
+              <div class="case-study-description">
+                (Visit the live site <a href="https://danitweitzman.github.io/The-Atlantic-Illustration/" target="_blank" class="styled-link">here</a>)
               </div>
             </div>
+
             <div class="first-image">
                 <img src="assets/atlantic/atlantic-computer.gif" alt="Atlantic Computer mockup" width="100%"/>
             </div>
+
             <div class="image-container"> 
                 <div class="single-width-image">
                 <img src="assets/atlantic/atlantic-ipad.png" alt="Atlantic Computer mockup" width="100%"/> 
@@ -153,107 +295,267 @@
                 <img src="assets/atlantic/atlantic-computer.png" alt="Atlantic Computer mockup" width="100%"/> 
                 </div>
             </div>
-            <h3>Print Edition</h3>
-            <div class="case-study-description">
-              A CONTINUATION OF THE INTERACTIVE EDITORIAL, TRANSLATED INTO PRINT. THE DESIGN EXTENDS THE EERIE ATMOSPHERE BY INTEGRATING A FISHING ROD HANGING OFF THE TITLE, WITH NEGATIVE SPACE CREATING A SENSE OF FEAR AND ISOLATION THROUGH THE DARK, EMPTY SECTION. THE PRINT VERSION MAINTAINS A COHESIVE VISUAL EXPERIENCE, REINFORCING THE NARRATIVE'S THEMES ACROSS BOTH MEDIUMS.
+            
+            <div class="case-study-intro">
+              <div class="case-study-description">
+                <h3>Translating Digital Interactivity into Print </h3>
+                To extend the experience beyond the screen, I adapted the interactive editorial into a print edition that preserves the eerie tone. A fishing rod hooks onto the title, visually pulling the reader into the story, while negative space reinforces isolation and fear. The transition from digital to print creates a cohesive narrative across both mediums.
+              </div>
             </div>
-            <div class="full-width-image">
+            
+            <div class="first-image">
                 <img src="assets/atlantic/atlantic-print.png" alt="Atlantic Computer mockup" width="100%"/> 
             </div>
+
+            <div class="case-study-intro">
+              <div class="case-study-description">
+                This project explores how design can shape emotional engagement. By using interaction, motion, and spatial composition, it transforms reading into an experience. To bring the story to life, this project integrates:   
+                <ul> 
+                  <li><strong>Frontend development</strong> to create an interactive reading experience driven by user input. </li> 
+                  <li><strong>UX/UI & motion design</strong> to shape navigation and atmosphere through dynamic lighting and transitions.</li> 
+                  <li><strong>Layout & graphic design</strong> to translate the digital experience into a cohesive, print-ready editorial.</li> 
+                </ul>   
+                Tools Used: CSS, HTML, P5.js, Figma, InDesign, Adobe Illustrator, Adobe Photoshop         
+              </div>
+            </div>
+
           </section>
             
-         <!-- PEPSICO CASE STUDY -->
+         <!--------------------------------
+                   PEPSICO CASE STUDY 
+            -------------------------------->
           <section id="pepsico" class="case-study hidden">
-            <h2>Logo Animations for Pepsico Lab Chats</h2>
-            <div class="case-study-description"> 
-              ANIMATED LOGOS FOR PEPSICO LABCHATS THAT EMBODY THE BRAND'S INNOVATIVE SPIRIT. THE ANIMATIONS ENHANCE THE VISUAL IDENTITY, CONVEYING THE ENERGY AND EXCITEMENT BEHIND PEPSICO'S COMMITMENT TO DIALOGUE AND INNOVATION.
+            
+            <h2>Logo Animations for PepsiCo Lab Chats</h2>
+
+            <div class="case-study-intro">
+              <div class="case-study-description"> 
+              As part of my work at <a href="https://elautobus.com/" target="_blank" class="styled-link">El Autobús</a> for PepsiCo, I created animated logos for PepsiCo LabChats, a platform dedicated to fostering innovation and dialogue. Using After Effects and Photoshop, I designed motion graphics that bring the brand’s identity to life—capturing its forward-thinking energy through dynamic movement and fluid transitions.
+              </div>
             </div>
+
             <div class="first-image">
               <img src="assets/pepsico/logo1_web.gif" alt="logo_1" class="cropped-gif"/>
             </div>
+
             <div class="first-image">
               <img src="assets/pepsico/logo2_web.gif" alt="logo_2" class="cropped-gif"/>
             </div>
+
             <div class="first-image">
               <img src="assets/pepsico/logo3_web.gif" alt="logo_3" class="cropped-gif"/>
             </div>
+
             <div class="first-image">
               <img src="assets/pepsico/logo4 _web.gif" alt="logo_4" class="cropped-gif"/>
             </div>
+
+            <div class="case-study-intro">
+              <div class="case-study-description">
+                This project was a blend of:
+                <ul> 
+                  <li><strong>Motion graphics</strong> to enhance brand storytelling through movement and pacing. </li> 
+                  <li><strong>Digital asset creation</strong> optimized for multi-platform use across video, presentations, digital media, and web.</li> 
+                </ul>   
+                Tools Used: Adobe AfterEffects, Adobe Illustrator, Adobe Photoshop         
+              </div>
+            </div>
+
           </section>
 
-          <!-- HALLOWEEN CASE STUDY -->
+            <!--------------------------------
+                   HALLOWEEN CASE STUDY 
+            -------------------------------->
           <section id="halloween" class="case-study hidden">
+
             <h2>Halloween 1978 Title Sequence Reimagined</h2>
-            <div class="case-study-description">
-                A REIMAGINED TITLE SEQUENCE INSPIRED BY KAZLAND'S PAINTING "WELCOME TO SHADOW LAND." THE SEQUENCE BLENDS NOSTALGIA WITH A CONTEMPORARY POP TWIST TO SET THE TONE FOR THE SPOOKY SEASON.
+
+            <div class="case-study-intro">
+              <div class="case-study-description">
+                Inspired by Kazland’s painting "Welcome to Shadow Land," this reimagined title sequence for Halloween (1978) blends eerie abstraction with bold, graphic minimalism. The design distills horror into its purest visual elements—sharp geometric forms, stark color contrasts, and unsettling typography—creating a sequence that feels both nostalgic and contemporary.
+              </div>
             </div>
-            <div class="case-study-video">
-              <video controls loop width="100%">
-              <source src="assets/halloween/halloween_typo.mp4" type="video/mp4" />
+
+            <div class="first-image"> 
+              <video autoplay loop muted playsinline width="100%">
+              <source src="assets/halloween/minifull.mov" type="video/mp4" />
               Your browser does not support the video tag.
               </video>
             </div>
+
+            <div class="case-study-intro">
+              <div class="case-study-description">
+                A stark, minimal composition transforms classic horror imagery into sharp, fragmented symbols that move through 3D space while retaining a flat, graphic quality. This contrast between depth and flatness heightens unease, reinforced by distorted, jagged typography set against a clean, rigid sans-serif.
+              </div>
+            </div>
+
             <div class="first-image">
               <img src="assets/halloween/styles.png" alt="styles" width="100%"/>
           </div>
+
+          <div class="first-image">
+            <img src="assets/halloween/storyboard.png" alt="styles" width="100%"/>
+        </div>
+
+        <div class="case-study-intro">
+          <div class="case-study-description">
+            <h3>Watch the full video:</h3>
+          </div>
+        </div>
+
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/935926093?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Halloween (1978) Title Sequence Reimagined"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+        <div class="case-study-intro">
+          <div class="case-study-description">
+            This project combines:
+            <ul> 
+              <li><strong>Title sequence design</strong> to reimagine a classic film through motion and typography. </li> 
+              <li><strong>3D motion graphics</strong> to create depth and tension while maintaining a minimal, graphic aesthetic.</li> 
+              <li><strong>Cinematic pacing</strong> to amplify suspense through movement, timing, and contrast.</li> 
+            </ul>   
+            Tools Used: Adobe AfterEffects, Adobe Illustrator, Figma       
+          </div>
+        </div>
+
           </section>
           
-          <!-- MANIFESTO CASE STUDY -->
+          <!--------------------------------
+                   ZINE CASE STUDY 
+            -------------------------------->
           <section id="manifesto" class="case-study hidden">
-            <h2>Halloween 1978 Title Sequence Reimagined</h2>
-            <div class="case-study-description">
-              A ZINE TITLED "THE EMBODIED MIND" THAT EXPLORES THE RESPONSIBILITIES OF DESIGN TECHNOLOGISTS IN SHAPING DIGITAL LANDSCAPES. IT EMPHASIZES CREATING WITH PURPOSE, FOSTERING GENUINE HUMAN CONNECTION, AND ENCOURAGING DEEPER INTERACTIONS IN A RAPIDLY EVOLVING DIGITAL WORLD.            
+            
+            <h2>The Embodied Mind: A Manifesto</h2>
+
+            <div class="case-study-intro">
+              <div class="case-study-description">
+                This zine-manifesto challenges the role of design in shaping digital spaces that either isolate or connect us. Through freeform layouts, hand-drawn illustrations, and an intentionally imperfect print aesthetic, it calls for technology that fosters human connection, emotional depth, and artistic integrity.            
+              </div>
             </div>
-            <div class="case-study-video">
-              <video controls loop width="100%">
-              <source src="assets/zine/fast.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-              </video>
+             
+            <div class="first-image">
+                <video autoplay loop muted playsinline width="100%">
+                 <source src="assets/zine/fast.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
             </div>
-            <div class="full-width-image">
-              <img src="assets/zine/p1.png" alt="page_1" width="100%"/>
+
+            <div class="case-study-three-imgs">
+              <div class="img-column">
+                <img src="assets/zine/mag_cropped.png" alt="cover" width="100%"/>
+                </img>
+              </div>
+              <div class="img-column">
+                <img src="assets/zine/p1.png" alt="page_1" width="100%"/>
+                </img>
+              </div>
             </div>
-            <div class="full-width-image">
-              <img src="assets/zine/p2.png" alt="page_2" width="100%"/>
+
+            <div class="case-study-three-imgs">
+              <div class="img-column">
+                <img src="assets/zine/p2.png" alt="page_2" width="100%"/>
+                </img>
+              </div>
+              <div class="img-column">
+                <img src="assets/zine/p3.png" alt="page_2" width="100%"/>
+                </img>
+              </div>
             </div>
-            <div class="full-width-image">
-              <img src="assets/zine/p3.png" alt="page_3" width="100%"/>
+
+            <div class="case-study-three-imgs">
+              <div class="img-column">
+                  <img src="assets/zine/p4.png" alt="page_3" width="100%"/>
+                  </img>
+              </div>
+              <div class="img-column">
+                <img src="assets/zine/p5.png" alt="page_4" width="100%"/>
+                </img>
+              </div>
+          </div>
+          
+            <div class="case-study-intro">
+              <div class="case-study-description">
+                Tools Used: Procreate, InDesign, Adobe Illustrator      
+              </div>
             </div>
-            <div class="full-width-image">
-              <img src="assets/zine/p4.png" alt="page_4" width="100%"/>
-            </div>
-            <div class="full-width-image">
-              <img src="assets/zine/p5.png" alt="page_5" width="100%"/>
-            </div>
+    
           </section>
 
-          <!-- OMBLIGO CASE STUDY -->
+          <!--------------------------------
+                   OMBLIGO CASE STUDY 
+            -------------------------------->
           <section id="ombligo" class="case-study hidden">
-            <h2>Ombligo Belly Button Serum Brand Identity</h2>
-            <div class="case-study-description">
-              A BRAND CONCEPTUALIZATION FOR A HOLISTIC WELLNESS BRAND ROOTED IN AYURVEDIC PRACTICES, OFFERING BELLY BUTTON SERUMS TO TARGET DIFFERENT ASPECTS OF PERSONAL CARE. THE BRAND IDENTITY FEATURES UNIQUE PATTERNS FOR EACH SERUM: IRIDESCENT TEXTURES FOR SKIN CARE TO REPRESENT RADIANCE, TREE AND ROOT MOTIFS FOR HEALTHY ROOTS TO SYMBOLIZE GROWTH, AND WIND-INSPIRED DESIGNS FOR PURIFYING SERUMS TO CONVEY FRESHNESS AND RENEWAL.            
+
+            <h2>Ombligo: Brand Identity, Packaging & App Design</h2>
+            
+            <div class="case-study-intro">
+              <div class="case-study-description">
+                Ombligo is a holistic wellness brand centered around Ayurvedic navel therapy, offering belly button serums designed to target different aspects of personal care. The brand identity, app, and marketing campaigns emphasize the concept of nourishing from within, aligning design with the product’s natural and spiritual philosophy.
+              </div>
             </div>
+
+            <div class="first-image">
+              <img src="assets/ombligo/single.png" alt="Ombligo" width="100%"/>
+            </div>
+
             <div class="first-image">
               <img src="assets/ombligo/three.png" alt="Ombligo" width="100%"/>
             </div>
+
+            <div class="case-study-intro">
+              <div class="case-study-description">
+                The Ombligo app extends the brand’s holistic philosophy into a seamless digital experience, combining e-commerce, wellness tracking, and education. Users can explore serums, receive personalized product recommendations, and track their menstrual cycle, energy levels, and sleep—aligning self-care with Ayurvedic principles. The UI balances a calm, organic aesthetic with intuitive navigation, ensuring a functional yet immersive experience.
+              </div>
+            </div>
+
+            <div class="first-image">
+              <img src="assets/ombligo/uxui.png" alt="Ombligo" width="100%"/>
+            </div>
+
+            <div class="case-study-intro">
+              <div class="case-study-description">
+                 This project combines:   
+                <ul> 
+                  <li><strong>Brand identity design</strong> to create a cohesive system that reflects Ayurvedic healing principles. </li> 
+                  <li><strong>UX/UI design</strong> to integrate e-commerce with wellness tracking for a holistic user experience.</li> 
+                  <li><strong>Packaging design</strong> to reinforce each serum’s unique benefits through patterns and symbolism.</li> 
+                </ul>   
+                Tools Used: Figma, InDesign, Adobe Illustrator, Adobe Photoshop         
+              </div>
+            </div>
+
           </section> 
 
-          <!-- MEDITATION CASE STUDY -->
+          <!--------------------------------
+                   MEDITATION CASE STUDY 
+            -------------------------------->
           <section id="meditation" class="case-study hidden">
-            <h2>Projection Mapping for Mindfulness</h2>
-            <div class="case-study-description">
-              A MEDITATION EXPERIENCE USING PROJECTION MAPPING ONTO THE BODY, WITH VISUALS PROJECTED ON THE HAND. THIS IMMERSIVE APPROACH EXPLORES THE CONNECTION TO OUR HANDS, EMPHASIZING THE MIND-BODY CONNECTION AND ENHANCING MINDFULNESS THROUGH VISUAL STORYTELLING.
+
+            <h2>Projection Mapping Meditation</h2>
+
+            <div class="case-study-intro">
+              <div class="case-study-description">
+                This immersive meditation experience uses projection mapping onto the hands to explore the mind-body connection through visual storytelling. By transforming the hand into a canvas for light, motion, and symbolism, the experience deepens mindfulness, creating a sensory bridge between the physical and mental state.
+              </div>
             </div>
-            <div class="case-study-video">
-              <video controls loop width="100%">
-              <source src="assets/meditation/meditation_final.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-              </video>
-            </div>
+
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1021753488?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Immersive Guided Meditation on the Mind-Body Connection"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
             <div class="first-image">
               <img src="assets/meditation/storyboard.png" alt="storyboard" width="100%"/>
             </div>
+
+            <div class="case-study-intro">
+              <div class="case-study-description">
+                 This project combines:   
+                <ul> 
+                  <li><strong>Immersive experience design</strong> by using light and animation to enhance meditation. </li> 
+                  <li><strong>Projection mapping</strong> to transform the body into a visual landscape.</li> 
+                  <li><strong>Storytelling</strong> by creating an emotional, sensory-driven meditation practice.</li> 
+                </ul>   
+                Tools Used: MadMapper, Procreate, Adobe After Effects        
+              </div>
+            </div>
+
           </section> 
 
           <!-- EXPERIMENTS CASE STUDY -->
