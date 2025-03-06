@@ -99,6 +99,15 @@ body {
   padding: 20px;
 }
 
+h3 {
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 .project-title {
   font-family: "swear-display", serif;
   font-weight: 400;
@@ -369,6 +378,7 @@ body {
   overflow: hidden;
   margin-top: 20px;
   margin-bottom: 10px;
+  border: 1px solid #000000;
 }
 
 .gallery-container.one-image .gallery-item {
