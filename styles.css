@@ -1,430 +1,422 @@
 @font-face {
-    font-family: "GT Flexa Mono Trial VF";
-    src: url("./fonts/GT-Flexa-Mono-Trial-VF.ttf") format("truetype");
+  font-family: "GT Flexa Mono Trial VF";
+  src: url("./fonts/GT-Flexa-Mono-Trial-VF.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Romie";
-    src: url("./fonts/Romie-Regular.otf") format("opentype");
+  font-family: "GT Haptik Bold";
+  src: url("./fonts/GT-Haptik-Bold.woff2") format("opentype");
 }
 
 @font-face {
-    font-family: "GT Haptik Bold";
-    src: url("./fonts/GT-Haptik-Bold.woff2") format("opentype");
+  font-family: "GT Haptik Regular";
+  src: url("./fonts/GT-Haptik-Regular.woff2") format("opentype");
 }
 
 @font-face {
-    font-family: "GT Haptik Regular";
-    src: url("./fonts/GT-Haptik-Regular.woff2") format("opentype");
+  font-family: "GT Haptik Regular Rotalic";
+  src: url("./fonts/GT-Haptik-Regular-Rotalic.woff2") format("opentype");
 }
 
 @font-face {
-    font-family: "GT Haptik Regular Rotalic";
-    src: url("./fonts/GT-Haptik-Regular-Rotalic.woff2") format("opentype");
-}
-
-@font-face {
-    font-family: "GT Haptik Thin";
-    src: url("./fonts/GT-Haptik-Thin.woff2") format("opentype");
+  font-family: "GT Haptik Thin";
+  src: url("./fonts/GT-Haptik-Thin.woff2") format("opentype");
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "GT Flexa Mono Trial VF", monospace;
-    background: #F2F0ED;
-    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiIGZpbGw9IiNjY2ZmODkiLz4KPC9zdmc+Cg==') 10 10, auto;
-    text-decoration: none;
-    color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "GT Flexa Mono Trial VF", monospace;
+  background: #f2f0ed;
+  cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiIGZpbGw9IiNjY2ZmODkiLz4KPC9zdmc+Cg==")
+      10 10,
+    auto;
+  text-decoration: none;
+  color: black;
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background: #F2F0ED;
-    z-index: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #f2f0ed;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
 }
 
 .navbar h1 {
-    font-family: 'GT Haptik Bold', Times;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 20px;
-    margin: 0;
-    margin-top: 10px;
-    cursor: pointer;
-    display: inline-block;
+  font-family: "inter", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0;
+  margin-top: 10px;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .navbar h1 span {
-    display: inline-block;
-    transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
 }
 
 .navbar h1:hover span {
-    transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
 
 .navbar h1:hover span:nth-child(odd) {
-    transform: rotate(15deg);
+  transform: rotate(15deg);
 }
 
 .navbar h1:hover span:nth-child(even) {
-    transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
 
 .footer {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.footer h1{
-    color:#000000;
+.footer h1 {
+  color: #000000;
 }
 
 .container {
-    display: flex;
-    margin-top: 0;
-    height: 100vh;
+  display: flex;
+  margin-top: 0;
+  height: 100vh;
 }
 
 .sidebar {
-    width: 20%;
-    background: #F2F0ED;
-    overflow-y: auto;
-    margin-top: 60px;
-    padding: 20px;
+  width: 20%;
+  background: #f2f0ed;
+  overflow-y: auto;
+  margin-top: 60px;
+  padding: 20px;
 }
 
 .project-title {
-    font-family: "Romie", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0px;
+  font-family: "swear-display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0px;
 }
 
 .project-vertical {
-    font-family: "GT Flexa Mono Trial VF", monospace;
-    font-size: 10px;
-    display: block;
-    margin: 10px 0 10px 0;
-    padding: 5px;
-    background: #ffffff;
+  font-family: "degular-mono", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  display: block;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+  background: #ffffff;
 }
 
 .intro {
-    font-family: "GT Flexa Mono Trial VF", monospace;
-    font-size: 10px;
-    display: flex;
+  font-family: "GT Flexa Mono Trial VF", monospace;
+  font-size: 10px;
+  display: flex;
 }
 
 .project-description {
-    margin-top: 2px;
-    margin-bottom: 0px;
-    font-size: 10px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  font-size: 10px;
 }
 
-.project-link a{
-    text-decoration: none;
-    align-items: right;
-    justify-content: right;
-    font-family: "GT Flexa Mono Trial VF", monospace;
-    font-size: 10px;
-    margin: 0px 0 10px 0;
-    padding: 5px 10px; 
-    background: #ffffff;
-    color: black;
+.project-link a {
+  text-decoration: none;
+  align-items: right;
+  justify-content: right;
+  font-family: "GT Flexa Mono Trial VF", monospace;
+  font-size: 10px;
+  margin: 0px 0 10px 0;
+  padding: 5px 10px;
+  background: #ffffff;
+  color: black;
 }
 
-.project-item .project-title{
-    color: black; 
+.project-item .project-title {
+  color: black;
 }
 
-.project-item:hover .project-title{
-    color: grey;
+.project-item:hover .project-title {
+  color: grey;
 }
-.project-item.active .project-title{
-    color: #9d0d6f;
-  }
+.project-item.active .project-title {
+  color: #9d0d6f;
+}
 
-
-.project-item .project-vertical{
-    display: none; 
+.project-item .project-vertical {
+  display: none;
 }
 
 .project-item:hover .project-vertical,
-.project-item.active .project-vertical{
-    display: inline-block; 
-  }
+.project-item.active .project-vertical {
+  display: inline-block;
+}
 
-.project-item .project-description{
-    display: none; 
+.project-item .project-description {
+  display: none;
 }
 
 .project-item.active .project-description {
-    display: inline-block; 
-  }
+  display: inline-block;
+}
 
 .main-content {
-    width: 80%;
-    overflow-y: auto;
-    position: relative;
-    display: block;
-    z-index: 1;
-    background: #F2F0ED;
-    padding: 5px 15px 15px 15px;
-    box-sizing: border-box;
+  width: 80%;
+  overflow-y: auto;
+  position: relative;
+  display: block;
+  z-index: 1;
+  background: #f2f0ed;
+  padding: 5px 15px 15px 15px;
+  box-sizing: border-box;
 }
 
 .main-content h2 {
-    /*font-family: "Romie", sans-serif;
-    font-family: 'GT Haptik Regular', Times;*/
-    font-family: 'inter', serif;
-    /*font-weight: bold;*/
-    font-weight: 400;
-    font-style: normal;
-    font-size: 46px;
-    margin-top: 10px; 
-    margin-bottom: 0px; 
-    padding-bottom: 0; 
-    clear: both; 
+  font-family: "inter", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 46px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  clear: both;
 }
 
 .case-study-description h3 {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.case-study { 
-    max-width: 1200px; 
-    margin: 0; 
-    padding-bottom: 5px; 
+.case-study {
+  max-width: 1200px;
+  margin: 0;
+  padding-bottom: 5px;
 }
 
 .project-tool {
-    font-family: "GT Flexa Mono Trial VF", monospace;
-    font-size: 10px;
-    display: inline-block;
-    margin: 2px;
-    padding: 5px;
-    background: #FFFFFF;
+  font-family: "GT Flexa Mono Trial VF", monospace;
+  font-size: 10px;
+  display: inline-block;
+  margin: 2px;
+  padding: 5px;
+  background: #ffffff;
 }
 
 .button-link {
-    font-family: "GT Flexa Mono Trial VF", monospace;
-    font-size: 10px;
-    display: inline-block;
-    margin: 2px;
-    padding: 5px;
-    background: #FFFFFF;
-    color: #000000;
-    text-decoration: none;
+  font-family: "GT Flexa Mono Trial VF", monospace;
+  font-size: 10px;
+  display: inline-block;
+  margin: 2px;
+  padding: 5px;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
 }
 
 .first-image {
-    width: 100%;
-    margin-top: 10px;
-    
+  width: 100%;
+  margin-top: 10px;
 }
 
 .full-width-image {
-    width: 100%;
-    margin-top: 2.5px;
-    margin-bottom: 0px;
+  width: 100%;
+  margin-top: 2.5px;
+  margin-bottom: 0px;
 }
 
 .image-container {
-    display: flex;
-    margin-top: 10px;
-    gap: 15px; /* Creates a 10px gap between images */
-    align-items: stretch; /* Ensures images are the same height */
+  display: flex;
+  margin-top: 10px;
+  gap: 15px;
+  align-items: stretch;
 }
 
-.single-width-image, .third-width-image {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+.single-width-image,
+.third-width-image {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .single-width-image {
-    flex: 1; /* Takes 1/3rd of the container */
+  flex: 1;
 }
 
 .third-width-image {
-    flex: 2; /* Takes 2/3rd of the container */
+  flex: 2;
 }
 
-.single-width-image img, .third-width-image img {
-    width: 100%; /* Ensures the images take up the full width */
-    height: 100%; /* Makes images fill the container */
-    object-fit: cover; /* Ensures images maintain aspect ratio and cover the container */
+.single-width-image img,
+.third-width-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .cropped-gif {
-    width: 100%;  
-    height: 680px; 
-    object-fit: cover;  
-    object-position: center 70%; 
+  width: 100%;
+  height: 680px;
+  object-fit: cover;
+  object-position: center 70%;
 }
 
 .cropped-img {
-    width: 100%;  
-    height: 680px; 
-    object-fit: cover;  
-    object-position: center 60%; 
+  width: 100%;
+  height: 680px;
+  object-fit: cover;
+  object-position: center 60%;
 }
 
 .case-study-video {
-    margin-top: 50px;
-    margin-bottom: 0px;
-    margin-top:0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .case-study-intro {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: "Inter", serif;
-    font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Inter", serif;
+  font-weight: 300;
 }
 
 .case-study-description {
-    width: 65%;
-    font-family: "Inter", serif;
-    font-weight: 300;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding-top: 0;
-    line-height: 1.5;
-    font-size: 14px;
+  width: 65%;
+  font-family: "Inter", serif;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 0;
+  line-height: 1.5;
+  font-size: 14px;
 }
 
 .case-study-conclusion {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-family: "Inter", serif;
-    font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: "Inter", serif;
+  font-weight: 300;
 }
 
 .case-study-conclusion-description {
-    width: 65%;
-    font-family: "Inter", serif;
-    font-weight: 300;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding-top: 0;
-    line-height: 1.5;
-    font-size: 14px;
+  width: 65%;
+  font-family: "Inter", serif;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 0;
+  line-height: 1.5;
+  font-size: 14px;
 }
 
 .case-study-conclusion-bullets {
-    width: 30%;
-    color:#777777;
-    font-family: "Inter", serif;
-    font-weight: 300;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding-top: 0;
-    line-height: 1.5;
-    font-size: 14px;
+  width: 30%;
+  color: #777777;
+  font-family: "Inter", serif;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 0;
+  line-height: 1.5;
+  font-size: 14px;
 }
 
 .styled-link {
-    color: #000000;
-    text-decoration: underline;
-  }
-  
+  color: #000000;
+  text-decoration: underline;
+}
+
 .styled-link:hover {
-    text-decoration: underline;
-    color: #cb80b3; 
-  }
+  text-decoration: underline;
+  color: #cb80b3;
+}
 
 .case-study-three-imgs {
-    display: flex;
-    gap: 5px; 
-    margin-bottom: 0px;
-    margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 .img-column {
-    flex: 1;
+  flex: 1;
 }
 
 .case-study-three-videos {
-    display: flex;
-    gap: 10px; 
-    margin-bottom: 40px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
 }
 
 .video-column {
-    flex: 1;
+  flex: 1;
 }
 
-/* Make each container 100% wide and 400px tall */
 .gallery-container {
-    width: 100%;
-    height: 400px;
-    display: flex;          /* let child .gallery-item line up side by side */
-    overflow: hidden;   
-    margin-top: 20px;     /* if images go beyond 400px in height, hide it */
-    margin-bottom: 10px;    /* some spacing between rows, optional */
-  }
+  width: 100%;
+  height: 400px;
+  display: flex;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 
+.gallery-container.one-image .gallery-item {
+  flex: 0 0 100%;
+  position: relative;
+  margin: 0px;
+}
 
-  .gallery-container.one-image .gallery-item {
-    flex: 0 0 100%; 
-    position: relative;
-    margin: 0px;
-  }
+.gallery-container.one-video .gallery-item {
+  flex: 0 0 100%;
+  position: relative;
+  margin: 0px;
+}
 
-  .gallery-container.one-video .gallery-item {
-    flex: 0 0 100%; 
-    position: relative;
-    margin: 0px;
-  }
-  
-  /* For 2 images side by side (50% + 50%) */
-  .gallery-container.two-images .gallery-item {
-    flex: 0 0 50%; 
-    position: relative;
-    margin: 0px;
-  }
-  
-  /* For 3 images side by side (33% each) */
-  .gallery-container.three-images .gallery-item {
-    flex: 0 0 33.333%;
-    position: relative;
-    margin: 0px;
-  }
-  /* Example: 2 images but not evenly split */
-  .gallery-container.two-images-uneven .gallery-item.wide {
-    flex: 0 0 62%;  /* 70% width for first image */
-    margin: 0px;
-  }
-  .gallery-container.two-images-uneven .gallery-item.narrow {
-    flex: 0 0 38%;  /* 30% width for second image */
-    margin: 0px;
-  }
+.gallery-container.two-images .gallery-item {
+  flex: 0 0 50%;
+  position: relative;
+  margin: 0px;
+}
 
-  .gallery-container.two-images-uneven .gallery-item {
-    position: relative;
-    margin: 0px;
-  }
-  
-  .gallery-container .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;    
-    display: block;
-    margin: 0px;
-  }
-  
+.gallery-container.three-images .gallery-item {
+  flex: 0 0 33.333%;
+  position: relative;
+  margin: 0px;
+}
+
+.gallery-container.two-images-uneven .gallery-item.wide {
+  flex: 0 0 62%;
+  margin: 0px;
+}
+.gallery-container.two-images-uneven .gallery-item.narrow {
+  flex: 0 0 38%;
+  margin: 0px;
+}
+
+.gallery-container.two-images-uneven .gallery-item {
+  position: relative;
+  margin: 0px;
+}
+
+.gallery-container .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0px;
+}
 
 .hidden {
-    display: none;
+  display: none;
 }
