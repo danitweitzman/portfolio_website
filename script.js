@@ -72,3 +72,4 @@ galleryContainers.forEach(container => {
     }
   });
 });
+
