@@ -1,5 +1,6 @@
 const projectItems = document.querySelectorAll('.sidebar .project-item');
 const allCaseStudies = document.querySelectorAll('.case-study');
+const mainContent = document.querySelector('.main-content'); // Get the main content container
 
 // Sidebar click: Show corresponding project section.
 projectItems.forEach(item => {
@@ -15,6 +16,9 @@ projectItems.forEach(item => {
     const targetSection = document.getElementById(sectionId);
     if (targetSection) {
       targetSection.classList.remove('hidden');
+
+      // Instantly move main content to top
+      mainContent.scrollTop = 0;
     }
 
     // Mark this item as active.
@@ -42,6 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const homeSection = document.getElementById('home');
       homeSection.classList.remove('hidden');
 
+      // Instantly move main content to top
+      mainContent.scrollTop = 0;
+
       // Mark the name's container (the .project-item in the navbar) as active.
       nameElement.closest('.project-item').classList.add('active');
     });
@@ -63,6 +70,9 @@ galleryContainers.forEach(container => {
     const targetSection = document.getElementById(sectionId);
     if (targetSection) {
       targetSection.classList.remove('hidden');
+
+      // Instantly move main content to top
+      mainContent.scrollTop = 0;
     }
 
     // Optionally, add active state to the matching sidebar item.
@@ -72,4 +82,3 @@ galleryContainers.forEach(container => {
     }
   });
 });
-
