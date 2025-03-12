@@ -66,3 +66,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const projectTitles = document.querySelectorAll(".project-item");
+    const galleryItems = document.querySelectorAll(".gallery-item");
+  
+    projectTitles.forEach((project) => {
+      const section = project.getAttribute("data-section");
+  
+      project.addEventListener("mouseenter", () => {
+        galleryItems.forEach((item) => {
+          if (item.getAttribute("data-section") === section) {
+            const img = item.querySelector("img");
+            img.style.transform = "rotate(15deg)";
+            img.style.margin = "-5%";
+            img.style.zIndex = "10";
+          }
+        });
+      });
+  
+      project.addEventListener("mouseleave", () => {
+        galleryItems.forEach((item) => {
+          if (item.getAttribute("data-section") === section) {
+            const img = item.querySelector("img");
+            img.style.transform = "";
+            img.style.margin = "";
+            img.style.zIndex = "";
+          }
+        });
+      });
+    });
+  });
+  

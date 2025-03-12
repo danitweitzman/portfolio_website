@@ -313,6 +313,11 @@ a {
     margin: -5%;
   }
   
+  .project-item:hover ~ .main-content .gallery-item[data-section] img {
+    transform: rotate(15deg);
+    margin: -5%;
+    z-index: 10;
+  }
 
 .hidden {
   display: none;
