@@ -71,19 +71,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectTitles = document.querySelectorAll(".project-item");
     const galleryItems = document.querySelectorAll(".gallery-item");
   
-    projectTitles.forEach((project) => {
+    projectTitles.forEach((project, index) => {
       const section = project.getAttribute("data-section");
   
+      const rotation = index % 2 === 0 ? "rotate(15deg)" : "rotate(-15deg)";
+  
       project.addEventListener("mouseenter", () => {
-        let count = 0; 
         galleryItems.forEach((item) => {
           if (item.getAttribute("data-section") === section) {
             const img = item.querySelector("img");
-            const rotation = count % 2 === 0 ? "rotate(15deg)" : "rotate(-15deg)";
             img.style.transform = `${rotation}`;
             img.style.margin = "-5%";
             img.style.zIndex = "10";
-            count++; 
           }
         });
       });
@@ -100,5 +99,4 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-  
   
