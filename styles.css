@@ -308,10 +308,16 @@ a {
     z-index: 10; 
   }
   
-  .gallery-item:hover img {
-    transform: rotate(15deg); 
+  .gallery-item:nth-child(odd) img:hover {
+    transform: rotate(15deg);
     margin: -5%;
   }
+  
+  .gallery-item:nth-child(even) img:hover {
+    transform: rotate(-15deg);
+    margin: -5%;
+  }
+  
   
   .project-item:hover ~ .main-content .gallery-item[data-section] img {
     transform: rotate(15deg);
