@@ -1,68 +1,142 @@
-@font-face {
-  font-family: "GT Flexa Mono Trial VF";
-  src: url("./fonts/GT-Flexa-Mono-Trial-VF.ttf") format("truetype");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  font-size: 22px;
+
+  --page-margin: 1rem;
+  --page-padding-bottom: 4rem;
+
+  --black: rgb(0, 0, 0);
+  --black-30: rgba(0, 0, 0, 0.3);
+  --white: #f2f1f0;
+  --white-50: rgba(255, 255, 255, 0.5);
+  --light-grey: rgb(234, 234, 231);
+  --dark-grey: rgb(180, 179, 174);
+
+  --sans-serif: "inter", sans-serif, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  --monospace: monospace;
+  --symbols: system-ui, -apple-system, BlinkMacSystemFont;
+  --font-size-small: 0.6rem;
+  --font-size-medium: 0.8rem;
+  --font-size-large: 1rem;
+
+  --highlight-color: null;
+
+  --about-max-width: 900px;
 }
 
-@font-face {
-  font-family: "GT Haptik Bold";
-  src: url("./fonts/GT-Haptik-Bold.woff2") format("opentype");
-}
-
-@font-face {
-  font-family: "GT Haptik Regular";
-  src: url("./fonts/GT-Haptik-Regular.woff2") format("opentype");
-}
-
-@font-face {
-  font-family: "GT Haptik Regular Rotalic";
-  src: url("./fonts/GT-Haptik-Regular-Rotalic.woff2") format("opentype");
-}
-
-@font-face {
-  font-family: "GT Haptik Thin";
-  src: url("./fonts/GT-Haptik-Thin.woff2") format("opentype");
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "GT Flexa Mono Trial VF", monospace;
-  background: #f2f0ed;
+  color: var(--black);
+  font-family: var(--sans-serif);
+  background-color: var(--light-grey);
   cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiIGZpbGw9IiNjY2ZmODkiLz4KPC9zdmc+Cg==")
       10 10,
     auto;
   text-decoration: none;
-  color: black;
+}
+
+h1 {
+  font-family: var(--sans-serif);
+  font-size: var(--font-size-large);
+  max-width: var(--about-max-width);
+  font-weight: 700;
+  margin: 0;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+h2 {
+  font-family: var(--sans-serif);
+  font-size: var(--font-size-medium);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--dark-grey);
+}
+
+h3 {
+  font-family: var(--sans-serif);
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--dark-grey);
+}
+
+h3.individual::before {
+  content: "←";
+  font-family: var(--symbols);
+  margin-right: 0.25rem;
+}
+
+h4 {
+  font-family: var(--sans-serif);
+  font-size: var(--font-size-small);
+  letter-spacing: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.sidebar h5 {
+  font-family: var(--sans-serif);
+  font-size: var(--font-size-small);
+  letter-spacing: 0;
+  position: absolute;
+  bottom: 15px;
+  left: 20px; 
+  margin: 0;
+  text-align: left;
+  color: var(--dark-grey);
+}
+
+.project-description {
+  font-family: var(--sans-serif);
+  font-size: var(--font-size-large);
+  letter-spacing: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.link--inline:after {
+  content: "↗";
+  font-family: var(--symbols);
+  margin-left: 0.25rem;
+}
+
+.link--inline:hover:after {
+  color: transparent;
 }
 
 .navbar {
   position: fixed;
+  background-color: var(--light-grey);
+  border-bottom: 1px solid black;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
-  background: #f2f0ed;
-  z-index: 0;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 20px;
-}
-
-.navbar h1 {
-  font-family: "inter", serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 27px;
-  margin: 0;
-  margin-top: 10px;
-  cursor: pointer;
-  display: inline-block;
+  padding: 0px 20px 10px;
 }
 
 .navbar h1 span {
   display: inline-block;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 
 .navbar h1:hover span {
@@ -77,12 +151,21 @@ body {
   transform: rotate(-15deg);
 }
 
-.footer {
-  text-decoration: none;
+.project-title span {
+  display: inline-block;
+  transition: transform 0.1s ease-in-out;
 }
 
-.footer h1 {
-  color: #000000;
+.project-title.hover span {
+  transform: rotate(-15deg);
+}
+
+.project-title.hover span:nth-child(odd) {
+  transform: rotate(15deg);
+}
+
+.project-title.hover span:nth-child(even) {
+  transform: rotate(-15deg);
 }
 
 .container {
@@ -92,92 +175,10 @@ body {
 }
 
 .sidebar {
-  width: 20%;
-  background: #f2f0ed;
+  width: 30%;
   overflow-y: auto;
   margin-top: 60px;
   padding: 20px;
-}
-
-h3 {
-  font-family: "inter", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 14px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.project-title {
-  font-family: "swear-display", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  margin: 0px;
-  margin-bottom: 20px;
-}
-
-.project-vertical {
-  font-family: "degular-mono", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  display: block;
-  margin: 10px 0 10px 0;
-  padding: 5px;
-  background: #ffffff;
-}
-
-.intro {
-  font-family: "GT Flexa Mono Trial VF", monospace;
-  font-size: 10px;
-  display: flex;
-}
-
-.project-description {
-  margin-top: 2px;
-  margin-bottom: 0px;
-  font-size: 10px;
-}
-
-.project-link a {
-  text-decoration: none;
-  align-items: right;
-  justify-content: right;
-  font-family: "GT Flexa Mono Trial VF", monospace;
-  font-size: 10px;
-  margin: 0px 0 10px 0;
-  padding: 5px 10px;
-  background: #ffffff;
-  color: black;
-}
-
-.project-item .project-title {
-  color: black;
-}
-
-.project-item:hover .project-title {
-  color: grey;
-}
-.project-item.active .project-title {
-  color: #9d0d6f;
-}
-
-.project-item .project-vertical {
-  display: none;
-}
-
-.project-item:hover .project-vertical,
-.project-item.active .project-vertical {
-  display: inline-block;
-}
-
-.project-item .project-description {
-  display: none;
-}
-
-.project-item.active .project-description {
-  display: inline-block;
 }
 
 .main-content {
@@ -185,51 +186,15 @@ h3 {
   overflow-y: auto;
   position: relative;
   display: block;
-  z-index: 1;
-  background: #f2f0ed;
-  padding: 5px 15px 15px 15px;
+  z-index: 0;
+  padding: 50px 20px 15px 15px;
   box-sizing: border-box;
-}
-
-.main-content h2 {
-  font-family: "inter", serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 40px;
-  margin-top: 10px;
-  margin-bottom: 0px;
-  padding-bottom: 0;
-  clear: both;
-}
-
-.case-study-description h3 {
-  text-decoration: none;
 }
 
 .case-study {
   max-width: 1200px;
   margin: 0;
   padding-bottom: 5px;
-}
-
-.project-tool {
-  font-family: "GT Flexa Mono Trial VF", monospace;
-  font-size: 10px;
-  display: inline-block;
-  margin: 2px;
-  padding: 5px;
-  background: #ffffff;
-}
-
-.button-link {
-  font-family: "GT Flexa Mono Trial VF", monospace;
-  font-size: 10px;
-  display: inline-block;
-  margin: 2px;
-  padding: 5px;
-  background: #ffffff;
-  color: #000000;
-  text-decoration: none;
 }
 
 .first-image {
@@ -292,65 +257,6 @@ h3 {
   margin-top: 0px;
 }
 
-.case-study-intro {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: "Inter", serif;
-  font-weight: 300;
-}
-
-.case-study-description {
-  width: 65%;
-  font-family: "Inter", serif;
-  font-weight: 300;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding-top: 0;
-  line-height: 1.5;
-  font-size: 14px;
-}
-
-.case-study-conclusion {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  font-family: "Inter", serif;
-  font-weight: 300;
-}
-
-.case-study-conclusion-description {
-  width: 65%;
-  font-family: "Inter", serif;
-  font-weight: 300;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding-top: 0;
-  line-height: 1.5;
-  font-size: 14px;
-}
-
-.case-study-conclusion-bullets {
-  width: 32%;
-  color: #9a9a9a;
-  font-family: "Inter", serif;
-  font-weight: 300;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding-top: 0;
-  line-height: 1.5;
-  font-size: 14px;
-}
-
-.styled-link {
-  color: #000000;
-  text-decoration: underline;
-}
-
-.styled-link:hover {
-  text-decoration: underline;
-  color: #cb80b3;
-}
-
 .case-study-three-imgs {
   display: flex;
   gap: 5px;
@@ -372,7 +278,38 @@ h3 {
   flex: 1;
 }
 
-.gallery-container {
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0px; 
+  padding: 0px;
+  max-width: 100%; 
+  margin-top: 10px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1.1 / 1; 
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05); 
+}
+
+.hidden {
+  display: none;
+}
+
+/*.gallery-container {
   width: 100%;
   height: 400px;
   display: flex;
@@ -425,9 +362,147 @@ h3 {
   object-fit: cover;
   display: block;
   margin: 0px;
+}*/
+
+/*
+.case-study-intro {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 300;
 }
 
-.hidden {
+.case-study-description {
+  width: 65%;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.case-study-conclusion {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-weight: 300;
+}
+
+.case-study-conclusion-description {
+  width: 65%;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.case-study-conclusion-bullets {
+  width: 32%;
+  color: #9a9a9a;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.styled-link {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.styled-link:hover {
+  text-decoration: underline;
+  color: #cb80b3;
+}
+
+.project-tool {
+  font-size: 10px;
+  display: inline-block;
+  margin: 2px;
+  padding: 5px;
+  background: #ffffff;
+}
+
+.button-link {
+  font-size: 10px;
+  display: inline-block;
+  margin: 2px;
+  padding: 5px;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+}
+
+.intro {
+  font-size: 10px;
+  display: flex;
+}
+
+.project-description {
+  margin-top: 2px;
+  margin-bottom: 0px;
+  font-size: 10px;
+}
+
+.project-link a {
+  text-decoration: none;
+  align-items: right;
+  justify-content: right;
+  font-size: 10px;
+  margin: 0px 0 10px 0;
+  padding: 5px 10px;
+  color: black;
+}
+
+.case-study-description h3 {
+  text-decoration: none;
+}
+
+.project-title {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.project-vertical {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  display: block;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+  background: #ffffff;
+}
+
+.main-content h2 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  clear: both;
+}
+
+.project-item .project-vertical {
   display: none;
 }
 
+.project-item:hover .project-vertical,
+.project-item.active .project-vertical {
+  display: inline-block;
+}
+
+.project-item .project-description {
+  display: none;
+}
+
+.project-item.active .project-description {
+  display: inline-block;
+}

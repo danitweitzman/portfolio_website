@@ -1,126 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danit Weitzman</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
     </style>
-    <link rel="stylesheet" href="https://use.typekit.net/jdh6fid.css">
-</head>
-<body>
-  <header class="navbar">
-    <div class="project-item" data-section="home">
-      <h1 id="name-toggle">DANIT&nbsp;WEITZMAN</h1>
-    </div>
-  </header>
+    <link rel="stylesheet" href="https://use.typekit.net/jdh6fid.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="project-item" data-section="home">
+        <h1 id="name-toggle">DANIT&nbsp;WEITZMAN</h1>
+      </div>
+    </header>
 
     <div class="container">
-        <aside class="sidebar">
+      <aside class="sidebar">
+        <div class="projects">
+          <h3 class="individual">PROJECTS</h3>
 
-          <div class="personal-projects">
-            <h3> PERSONAL PROJECTS </h3>
-          
-              <div class="project-item" data-section="cafe">
-                  <p class="project-title">Data Driven Coffee Packaging</p>
-                  <p class="project-vertical">BRANDING</p>
-                  <p class="project-vertical">DATA VIZ</p>
-                  <p class="project-vertical">FRONTEND CODE</p>
-              </div>
-  
-              <div class="project-item" data-section="halloween">
-                <p class="project-title">Halloween (1978) Title Sequence</p>
-                <p class="project-vertical">MOTION GRAPHICS</p>
-            </div>
-  
-              <div class="project-item" data-section="atlantic">
-                  <p class="project-title">Interactive Editorial, The Atlantic</p>
-                  <p class="project-vertical">FRONTEND CODE</p>
-                  <p class="project-vertical">GRAPHIC DESIGN</p>
-              </div>
-  
-              <div class="project-item" data-section="zine">
-                  <p class="project-title">The Embodied Mind Manifesto</p>
-                  <p class="project-vertical">EDITORIAL</p>
-                  <p class="project-vertical">ILLUSTRATION</p>
-              </div>
-  
-              <div class="project-item" data-section="meditation">
-                  <p class="project-title"> Mind-Body Projections</p>
-                  <p class="project-vertical">PROJECTION MAPPING</p>
-                  <p class="project-vertical">MOTION GRAPHICS</p>
-              </div>
-  
+          <div class="project-item" data-section="cafe">
+            <h2 class="project-title">
+              Data&nbsp;Driven&nbsp;Coffee&nbsp;Packaging
+            </h2>
           </div>
 
-        <div class="work-projects">
-          <h3> WORK PROJECTS </h3>
+          <h4>2024</h4>
+          <h4>Code, Data, Packaging</h4>
 
-          <div class="project-item" data-section="pepsico">
-            <p class="project-title">PepsiCo LabChats, Logo Animations</p>
-            <p class="project-vertical">MOTION GRAPHICS</p>
-        </div>
-
-        <div class="project-item" data-section="my-interview">
-          <p class="project-title">MyInterview, Landing Page Design</p>
-          <p class="project-vertical">FIGMA</p>
-          <p class="project-vertical">HUBSPOT</p>
-        </div>
-           
-          <div class="project-item" data-section="tod">
-            <p class="project-title"> Train of Deception, Landing Page Design</p>
-            <p class="project-vertical">FIGMA</p>
+          <div class="project-description">
+            <p>
+              This project translates coffee tasting notes into visuals. Using
+              data from Café Granja La Esperanza, a JavaScript-based system maps
+              environmental factors to shape, color, and movement—turning flavor
+              profiles into dynamic, responsive graphics.
+            </p>
           </div>
 
+          <p>
+            <a
+              class="link--inline"
+              href="https://danitweitzman.github.io/Coffee-Packaging-Generator/"
+              >Live Site</a
+            >
+          </p>
+          <h5>
+            Code: CSS, HTML, Vanilla JS<br />Data: CSV, JavaScript<br />Packaging:
+            Adobe Indesign
+          </h5>
         </div>
+      </aside>
 
-        </aside>
+      <main class="main-content">
+        <section id="cafe" class="case-study">
+          <div class="first-image">
+            <img src="/projects/cafe/crop.webp" alt="package" width="100%" />
+          </div>
 
+          <div class="first-image">
+            <img src="/projects/cafe/img1.webp" alt="generator" width="100%" />
+          </div>
 
-        <main class="main-content">
+          <div class="first-image">
+            <img src="/projects/cafe/img4.webp" alt="styles" width="100%" />
+          </div>
+          <div class="first-image">
+            <img src="/projects/cafe/frames.webp" alt="frames" width="100%" />
+          </div>
 
-            <section id="cafe" class="case-study">
-
-                <h2>Data-Driven Coffee Packaging</h2>
-  
-                <div class="case-study-intro">
-                  <div class="case-study-description">
-                    Traditional coffee packaging often relies on text—processing methods, tasting notes, and altitude—to describe flavor. But for visual thinkers, these descriptions can feel abstract. What does “light-bodied with fruity notes” actually look like?                
-                  </div>
-                </div>
-  
-                <div class="first-image">
-                  <img src="/projects/cafe/frames.webp" alt="frames" class="cropped-gif"/>
-                </div>
-  
-                <div class="case-study-intro">
-                  <div class="case-study-description">
-                    To capture the essence of flavor beyond words, I created a generator that translates coffee profiles into living visuals—where color, shapes, and layers intuitively reveal the taste, body, and feel of each bean.
-                  </div>
-  
-                <!--<div class="first-image">
+          <!--<div class="first-image">
                   <video autoplay loop muted playsinline width="100%">
                     <source src="projects/cafe/generator.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                   </video>
-                </div>-->
-  
-                <div class="first-image">
-                  <img src="/projects/cafe/ss.webp" alt="generator" width="100%"/>
-              </div>
-  
-                <div class="case-study-intro">
-                  <div class="case-study-description">
-                    I wanted to create a design system that translates coffee’s environmental data into form. Inspired by the mountain ranges where Colombian coffee beans are grown, the generator maps data points like altitude and temperature into design elements—altitude determines the number of mountain layers, while temperature controls the sharpness of peaks. Humidity impacts body, with fuller coffees forming wide, flowing waves and lighter ones appearing as condensed peaks. 
-                  </div>
-  
-                  <div class="first-image">
-                    <img src="/projects/cafe/closeup.webp" alt="styles" width="100%"/>
                 </div>
+
   
-                <!--<div class="case-study-three-imgs">
+                <div class="case-study-three-imgs">
                   <div class="img-column">
                     <video autoplay loop muted playsinline width="100%">
                       <source src="projects/cafe/altitude_detail.mp4" type="video/mp4" />
@@ -139,43 +99,15 @@
                       Your browser does not support the video tag.
                       </video>
                   </div> 
-                </div>-->
-  
-                <div class="case-study-intro">
-                  <div class="case-study-description">
-                    The final output places this visualization onto coffee packaging, where each design intuitively reflects the a coffee bean’s unique flavor profile.
-                  </div>
-  
-                  <!--<div class="first-image">
-                    <img src="projects/cafe/output.gif" alt="Packaging" class="cropped-gif"/>
-                  </div>-->
+                </div>
   
                   <div class="first-image">
-                    <img src="/projects/cafe/crop.webp" alt="package" width="100%"/>
-                </div>
-                
-                <div class="case-study-conclusion">
-                  <div class="case-study-conclusion-description">
-                    This project was built by structuring coffee data from Cafe Granja la Esperanza's beans in a CSV file and integrating it into the generator using JavaScript. The system processes environmental variables through an API pipeline, mapping them to visual elements. The interface and interactions were designed using HTML, CSS, and JavaScript, translating raw data into a dynamic, responsive visualization.
-                  </div>
-                  <div class="case-study-conclusion-bullets">      
-                      Tools & Skills:  
-                        <li>Frontend development: (CSS, HTML, JavaScript)</li> 
-                        <li>Data Processing & Visualization: (CSV, JavaScript)</li> 
-                        <li>Packaging Design: (Adobe Indesign)</li> 
-                  </div>
-  
-  
-          </section>
-
-        </main>
+                    <img src="projects/cafe/output.gif" alt="Packaging" class="cropped-gif"/>
+                  </div>-->
+        </section>
+      </main>
     </div>
-    
-    
-        <script src="/script.js"></script>
-    </body>
-    </html>
-    
-    
 
-
+    <script src="/script.js"></script>
+  </body>
+</html>
